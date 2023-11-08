@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/timavidon/Intro-component-with-sign-up-form)
+- Live Site URL: [Live Site](https://timavidon.github.io/Intro-component-with-sign-up-form/)
 
 ## My process
 
