@@ -1,0 +1,194 @@
+:root {
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --white: hsl(0, 0%, 100%);
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 2.5rem;
+  font-size: 1.6rem;
+  background-color: var(--red);
+  background-image: url(./images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.intro {
+  color: var(--white);
+}
+
+.heading {
+  max-width: 45rem;
+  font-size: 5rem;
+  line-height: 1.12;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  max-width: 50rem;
+  line-height: 1.55;
+  opacity: 0.9;
+}
+
+.trial-note {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 0.8rem;
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 0 0.3rem 1rem 0 var(--dark-blue),
+    0px 0.5rem 0.2rem 0 var(--dark-blue);
+}
+
+.trial-period {
+  font-weight: 600;
+}
+
+label {
+  display: none;
+}
+
+.sign-up-form {
+  padding: 3.5rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+  box-shadow: 0 0.5rem 1rem 0 var(--dark-blue), 0 1rem 0.3rem 0 var(--dark-blue);
+}
+
+.sign-up-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+.submit-btn {
+  width: 100%;
+  margin: 1.4rem auto;
+  padding: 1.7rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 0.1rem solid var(--grayish-blue);
+  border-radius: 0.8rem;
+  color: var(--dark-blue);
+}
+
+input:focus {
+  outline: 0.1rem solid var(--blue);
+}
+
+.submit-btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.1rem 0 var(--green), 0 0.4rem 0.2rem 0 var(--dark-blue);
+}
+
+.submit-btn:hover,
+.submit-btn:active {
+  opacity: 0.8;
+}
+
+.error {
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  outline: 0.2rem solid var(--red);
+}
+
+.req-msg {
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: -1rem 0 1rem auto;
+  color: var(--red);
+}
+
+.error-msg {
+  display: block;
+}
+
+.success {
+  outline: 0.2rem solid var(--green);
+}
+
+.terms-and-services {
+  font-size: 1.35rem;
+  color: var(--grayish-blue);
+}
+
+.terms-and-services a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--red);
+}
+
+.attribution {
+  margin: 5rem auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+.attribution a {
+  color: var(--blue);
+}
+
+/* Phones */
+@media (max-width: 1000px) {
+  body {
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+
+  .intro-component {
+    flex-direction: column;
+    gap: 10rem;
+    text-align: center;
+  }
+
+  .intro {
+    color: var(--white);
+  }
+
+  .heading {
+    font-size: 3.5rem;
+    margin: 2.5rem;
+  }
+}
